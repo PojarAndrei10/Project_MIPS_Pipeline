@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 09 11:29:19 2023
+# Process ID: 16444
+# Current directory: C:/Users/andre/test_env2/test_env2.runs/synth_1
+# Command line: vivado.exe -log test_env2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_env2.tcl
+# Log file: C:/Users/andre/test_env2/test_env2.runs/synth_1/test_env2.vds
+# Journal file: C:/Users/andre/test_env2/test_env2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source test_env2.tcl -notrace

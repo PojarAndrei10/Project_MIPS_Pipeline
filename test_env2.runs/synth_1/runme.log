@@ -1,0 +1,536 @@
+
+*** Running vivado
+    with args -log test_env2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_env2.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source test_env2.tcl -notrace
+Command: synth_design -top test_env2 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9304 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 281.492 ; gain = 71.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_env2' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:45]
+INFO: [Synth 8-3491] module 'SSD' declared at 'C:/Users/andre/test_env2/test_env2.srcs/sources_1/imports/new/SSD.vhd:36' bound to instance 'display' of component 'SSD' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/imports/new/SSD.vhd:43]
+INFO: [Synth 8-226] default block is never used [C:/Users/andre/test_env2/test_env2.srcs/sources_1/imports/new/SSD.vhd:70]
+WARNING: [Synth 8-614] signal 'counter' is read in the process but is not in the sensitivity list [C:/Users/andre/test_env2/test_env2.srcs/sources_1/imports/new/SSD.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (1#1) [C:/Users/andre/test_env2/test_env2.srcs/sources_1/imports/new/SSD.vhd:43]
+INFO: [Synth 8-3491] module 'IF_FETCH' declared at 'C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/IF_FETCH.vhd:36' bound to instance 'InstructionFetch' of component 'IF_FETCH' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'IF_FETCH' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/IF_FETCH.vhd:51]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/IF_FETCH.vhd:212]
+INFO: [Synth 8-256] done synthesizing module 'IF_FETCH' (2#1) [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/IF_FETCH.vhd:51]
+INFO: [Synth 8-3491] module 'ID' declared at 'C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/ID.vhd:36' bound to instance 'InstructionDecode' of component 'ID' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'ID' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/ID.vhd:52]
+INFO: [Synth 8-3491] module 'Reg_file' declared at 'C:/Users/andre/test_env2/test_env2.srcs/sources_1/imports/new/Reg_file.vhd:36' bound to instance 'RF' of component 'Reg_file' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/ID.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'Reg_file' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/imports/new/Reg_file.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Reg_file' (3#1) [C:/Users/andre/test_env2/test_env2.srcs/sources_1/imports/new/Reg_file.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'ID' (4#1) [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/ID.vhd:52]
+INFO: [Synth 8-3491] module 'UC' declared at 'C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/UC.vhd:36' bound to instance 'Unitate_control' of component 'UC' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'UC' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/UC.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'UC' (5#1) [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/UC.vhd:52]
+INFO: [Synth 8-3491] module 'EX' declared at 'C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/EX.vhd:36' bound to instance 'ALU' of component 'EX' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'EX' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/EX.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'EX' (6#1) [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/EX.vhd:47]
+INFO: [Synth 8-3491] module 'MEM' declared at 'C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/MEM.vhd:36' bound to instance 'Memorie_Ram' of component 'MEM' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'MEM' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/MEM.vhd:45]
+WARNING: [Synth 8-614] signal 'ALURes' is read in the process but is not in the sensitivity list [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/MEM.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'MEM' (7#1) [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/MEM.vhd:45]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/andre/test_env2/test_env2.srcs/sources_1/imports/new/MPG.vhd:36' bound to instance 'Generator_Monoimpuls_Sincron1' of component 'MPG' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'MPG' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/imports/new/MPG.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (8#1) [C:/Users/andre/test_env2/test_env2.srcs/sources_1/imports/new/MPG.vhd:42]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/andre/test_env2/test_env2.srcs/sources_1/imports/new/MPG.vhd:36' bound to instance 'Generator_Monoimpuls_Sincron2' of component 'MPG' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:204]
+WARNING: [Synth 8-614] signal 'extimm_id_ex' is read in the process but is not in the sensitivity list [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:221]
+WARNING: [Synth 8-614] signal 'alurez_ex_mem' is read in the process but is not in the sensitivity list [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:221]
+WARNING: [Synth 8-614] signal 'read_data_mem_wb' is read in the process but is not in the sensitivity list [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:221]
+WARNING: [Synth 8-3848] Net jmp in module/entity test_env2 does not have driver. [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:129]
+WARNING: [Synth 8-3848] Net jr_ad in module/entity test_env2 does not have driver. [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:137]
+INFO: [Synth 8-256] done synthesizing module 'test_env2' (9#1) [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:45]
+WARNING: [Synth 8-3917] design test_env2 has port led[15] driven by constant 0
+WARNING: [Synth 8-3917] design test_env2 has port led[14] driven by constant 0
+WARNING: [Synth 8-3917] design test_env2 has port led[13] driven by constant 0
+WARNING: [Synth 8-3331] design MEM has unconnected port ALURes[15]
+WARNING: [Synth 8-3331] design MEM has unconnected port ALURes[14]
+WARNING: [Synth 8-3331] design MEM has unconnected port ALURes[13]
+WARNING: [Synth 8-3331] design MEM has unconnected port ALURes[12]
+WARNING: [Synth 8-3331] design MEM has unconnected port ALURes[11]
+WARNING: [Synth 8-3331] design MEM has unconnected port ALURes[10]
+WARNING: [Synth 8-3331] design MEM has unconnected port ALURes[9]
+WARNING: [Synth 8-3331] design MEM has unconnected port ALURes[8]
+WARNING: [Synth 8-3331] design MEM has unconnected port ALURes[7]
+WARNING: [Synth 8-3331] design EX has unconnected port Sa
+WARNING: [Synth 8-3331] design ID has unconnected port RegDst
+WARNING: [Synth 8-3331] design ID has unconnected port Instr[15]
+WARNING: [Synth 8-3331] design ID has unconnected port Instr[14]
+WARNING: [Synth 8-3331] design ID has unconnected port Instr[13]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port btn[4]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port btn[3]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port btn[2]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[4]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[3]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[2]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[1]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 319.973 ; gain = 109.664
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jump to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[15] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[14] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[13] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[12] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[11] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[10] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[9] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[8] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[7] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[6] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[5] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[4] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[3] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[2] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[1] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+WARNING: [Synth 8-3295] tying undriven pin InstructionFetch:Jr_Adress[0] to constant 0 [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/test_env2.vhd:187]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 319.973 ; gain = 109.664
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/andre/test_env2/test_env2.srcs/constrs_1/imports/new/basys3.xdc]
+Finished Parsing XDC File [C:/Users/andre/test_env2/test_env2.srcs/constrs_1/imports/new/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/andre/test_env2/test_env2.srcs/constrs_1/imports/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_env2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_env2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 611.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "myRom" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/EX.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'AluControl_reg' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/UC.vhd:103]
+WARNING: [Synth 8-327] inferring latch for variable 'op_alu_reg' [C:/Users/andre/test_env2/test_env2.srcs/sources_1/new/UC.vhd:77]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 13    
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 20    
++---RAMs : 
+	               1K Bit         RAMs := 1     
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	 257 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 9     
+	   8 Input     16 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module test_env2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 12    
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module SSD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module IF_FETCH 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	 257 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+Module Reg_file 
+Detailed RTL Component Info : 
++---RAMs : 
+	              128 Bit         RAMs := 1     
+Module ID 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module UC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 1     
+Module EX 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+Module MEM 
+Detailed RTL Component Info : 
++---RAMs : 
+	               1K Bit         RAMs := 1     
+Module MPG 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design test_env2 has port led[15] driven by constant 0
+WARNING: [Synth 8-3917] design test_env2 has port led[14] driven by constant 0
+WARNING: [Synth 8-3917] design test_env2 has port led[13] driven by constant 0
+WARNING: [Synth 8-3331] design test_env2 has unconnected port btn[4]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port btn[3]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port btn[2]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[15]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[4]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[3]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[2]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[1]
+WARNING: [Synth 8-3331] design test_env2 has unconnected port sw[0]
+INFO: [Synth 8-3886] merging instance 'extimm_id_ex_reg[8]' (FDE) to 'extimm_id_ex_reg[7]'
+INFO: [Synth 8-3886] merging instance 'extimm_id_ex_reg[12]' (FDE) to 'extimm_id_ex_reg[7]'
+INFO: [Synth 8-3886] merging instance 'extimm_id_ex_reg[9]' (FDE) to 'extimm_id_ex_reg[7]'
+INFO: [Synth 8-3886] merging instance 'extimm_id_ex_reg[13]' (FDE) to 'extimm_id_ex_reg[7]'
+INFO: [Synth 8-3886] merging instance 'extimm_id_ex_reg[10]' (FDE) to 'extimm_id_ex_reg[7]'
+INFO: [Synth 8-3886] merging instance 'extimm_id_ex_reg[14]' (FDE) to 'extimm_id_ex_reg[7]'
+INFO: [Synth 8-3886] merging instance 'extimm_id_ex_reg[11]' (FDE) to 'extimm_id_ex_reg[7]'
+INFO: [Synth 8-3886] merging instance 'extimm_id_ex_reg[7]' (FDE) to 'extimm_id_ex_reg[15]'
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[16]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[17]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[18]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[19]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[20]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[21]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[22]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[23]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[24]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[25]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[26]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[27]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[28]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[29]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[30]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (Generator_Monoimpuls_Sincron1/count_int_reg[31]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[14]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[13]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[12]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[11]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[10]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[9]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[8]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[7]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[6]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[5]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[4]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[3]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[2]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[1]) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[0]) is unused and will be removed from module test_env2.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------+-----------+----------------------+--------------------------------+
+|Module Name | RTL Object                        | Inference | Size (Depth x Width) | Primitives                     | 
++------------+-----------------------------------+-----------+----------------------+--------------------------------+
+|test_env2   | InstructionDecode/RF/reg_file_reg | Implied   | 8 x 16               | RAM32M x 6                     | 
+|test_env2   | Memorie_Ram/RAM_reg               | Implied   | 128 x 16             | RAM16X1S x 16  RAM64X1S x 16   | 
++------------+-----------------------------------+-----------+----------------------+--------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (bltz_id_ex_reg) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (bltz_ex_mem_reg) is unused and will be removed from module test_env2.
+WARNING: [Synth 8-3332] Sequential element (rd1_ex_mem_reg[15]) is unused and will be removed from module test_env2.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|test_env2   | memtoreg_mem_wb_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    20|
+|3     |LUT1     |    56|
+|4     |LUT2     |    38|
+|5     |LUT3     |    51|
+|6     |LUT4     |    17|
+|7     |LUT5     |    55|
+|8     |LUT6     |   101|
+|9     |MUXF7    |    22|
+|10    |RAM16X1S |    16|
+|11    |RAM32M   |     6|
+|12    |RAM64X1S |    16|
+|13    |SRL16E   |     1|
+|14    |FDRE     |   240|
+|15    |FDSE     |    12|
+|16    |LD       |     2|
+|17    |LDC      |     3|
+|18    |IBUF     |     6|
+|19    |OBUF     |    27|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------------------+---------+------+
+|      |Instance                        |Module   |Cells |
++------+--------------------------------+---------+------+
+|1     |top                             |         |   690|
+|2     |  ALU                           |EX       |    77|
+|3     |  Generator_Monoimpuls_Sincron1 |MPG      |    50|
+|4     |  Generator_Monoimpuls_Sincron2 |MPG_0    |     3|
+|5     |  InstructionDecode             |ID       |    22|
+|6     |    RF                          |Reg_file |    22|
+|7     |  InstructionFetch              |IF_FETCH |   103|
+|8     |  Memorie_Ram                   |MEM      |    48|
+|9     |  Unitate_control               |UC       |    12|
+|10    |  display                       |SSD      |    51|
++------+--------------------------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 611.691 ; gain = 401.383
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 55 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 611.691 ; gain = 109.664
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 611.691 ; gain = 401.383
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 69 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 6 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 43 instances were transformed.
+  LD => LDCE: 2 instances
+  LDC => LDCE: 3 instances
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 611.691 ; gain = 401.383
+INFO: [Common 17-1381] The checkpoint 'C:/Users/andre/test_env2/test_env2.runs/synth_1/test_env2.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 611.691 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May 09 11:29:42 2023...
